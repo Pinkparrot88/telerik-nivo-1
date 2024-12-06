@@ -5,7 +5,7 @@ const game = new Phaser.Game(800, 800, Phaser.AUTO, 'game-canvas', { preload, cr
 let x = 0
 let text
 function preload() {
-    
+
 }
 
 function create() {
@@ -20,13 +20,9 @@ function create() {
         strokeThickness: 4
     }
 
-    
-
     text = game.add.text(game.width/2,game.height/2, x , myStyle)
     text.anchor.setTo(0.5)
     text.scale.setTo(3)
-
-
 }
 
 function update() {
