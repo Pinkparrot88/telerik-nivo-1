@@ -65,37 +65,6 @@ function create() {
    fg.height=game.height/3
    fg.width=game.width/3
    
-  
-
-   const x = game.add.sprite(game.width / 2, game.height / 2, "dude")
-   x.anchor.setTo(0.5)
-   x.scale.setTo(5)
-   console.log(x)
-
-   const y = game.add.sprite(0, 0, "dude")
-   y.scale.setTo(2)
-   y.alpha = 1
-
-   const z = game.add.sprite(game.width, 0, "dude")
-   z.anchor.setTo(1, 0)
-   z.scale.setTo(1, 2)
-   z.alpha = 1
-
-   const a = game.add.sprite(0, game.height, "dude")
-   a.anchor.setTo(0, 1)
-   a.scale.setTo(0.5)
-   a.alpha = 1
-
-   const b = game.add.sprite(game.width, game.height, "dude")
-   b.anchor.setTo(0)
-   b.scale.setTo(-2)
-   b.alpha =1
-
-   const n = game.add.sprite(53, 57, "dude")
-   n.anchor.setTo(0.9)
-   n.scale.setTo(3)
-   n.alpha = 1
-
 
 }
 
