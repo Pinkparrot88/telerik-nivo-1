@@ -10,7 +10,7 @@ function preload() {
 
 function create() {
 
-    const myStyle = {
+    const myStyle = {  //you create a constant so you can use this format of text for more than 1 place
 
         font: '50px Tahoma',
         fill: '#0eedbd',
