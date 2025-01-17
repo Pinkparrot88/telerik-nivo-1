@@ -14,7 +14,7 @@ function create() {
   cat = game.add.sprite(0,0, "cat")
   cat.anchor.setTo(0)
   cat.scale.setTo(0.5)
-  cat.animations.add("cat", [0, 1, 2, 3, 4, 5, 6], 10, true)
+  cat.animations.add("cat", [0, 1, 2, 3, 4, 5], 10, true)
   cat.animations.play("cat")
 
 }

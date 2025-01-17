@@ -20,10 +20,10 @@ cat.animations.play("cat")
 function update() {
     
     if (cat.x > game.width - cat.width) {
-        direction = -5          //here we change the direction by putting -5 instead of 5
+        direction = -5          
       }
     
-      if (cat.x < 0) {        //if the cat lays on an area past the game width, then the cat will move backwards
+      if (cat.x < 0) {      
         direction = 5
       }
       cat.x += direction
