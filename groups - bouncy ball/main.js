@@ -8,12 +8,16 @@ function preload() {
     game.load.image("spheregreen", "sphere-green.png")
     game.load.image("sphereyellow", "sphere-yellow.png")
     game.load.image("sphereblue", "sphere-blue (1).png")
+    game.load.image("spheresad", "sphere-sad (1).png")
    
 }
 
 let spheres
+let spheresad
 
 function create() {
+
+spheresad = game.add.sprite(300, 600, "spheresad")
     
     spheres = game.add.group()
     
@@ -22,14 +26,15 @@ function create() {
     spheres.create (0,0 , "sphereyellow")
     spheres.create (800,800 , "spheregreen")
     spheres.create (game.width/2,game.height/2 , "spherepurple")
+    spheres.add(spheresad)
 
     game.physics.arcade.enable(spheres) 
  
     spheres.setAll("body.collideWorldBounds", true)
     spheres.setAll("body.bounce.x", 1)
     spheres.setAll("body.bounce.y", 1)
-    spheres.setAll("body.velocity.x", 1000)
-    spheres.setAll("body.velocity.y", 1000)
+    spheres.setAll("body.velocity.x", 500)
+    spheres.setAll("body.velocity.y", 500)
     spheres.setAll("scale.x", 0.2)
     spheres.setAll("scale.y", 0.2)
 
