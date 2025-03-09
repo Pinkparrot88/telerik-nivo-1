@@ -110,8 +110,6 @@ function update() {
 
     let isMoving = false
 
-    
-
 
     if (d.isDown) {
         dude.body.velocity.x = speed, dude.animations.play("duderight"), isMoving = true
@@ -122,10 +120,6 @@ function update() {
     else {dude.body.velocity.x = 0}
 
 
-   
-    if (s.isDown) {
-    dude.body.velocity.y = 0,  isMoving = false
-    }
  
     if (isMoving==false) {
         dude.animations.play("stop")
@@ -139,6 +133,7 @@ function update() {
     game.physics.arcade.overlap(dude,coin, collectCoin)
 
 }
+
 
 
 
