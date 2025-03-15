@@ -14,14 +14,14 @@ function create() {
     sky.scale.setTo(0.6)
     sky.anchor.setTo(1.0,1)
 
-    let broski = game.add.sprite(game.width/2,game.height/2, "broski");
+    let broski = game.add.sprite(game.width/2,game.height/2, "broski")
     broski.animations.add("broski", [], 10, true).play()
     broski.scale.setTo(4)
     broski.anchor.setTo(0.5)
     broski.alpha = 1
     
 
-    let electro = game.add.sprite(game.width,game.height, "electro");
+    let electro = game.add.sprite(game.width,game.height, "electro")
     electro.animations.add("electro", [], 15, true).play()
     electro.scale.setTo(2)
     electro.anchor.setTo(1)

@@ -41,12 +41,10 @@ function create() {
    d = game.input.keyboard.addKey(Phaser.Keyboard.D)
    w = game.input.keyboard.addKey(Phaser.Keyboard.W)
 
-
-   
   
 
-    bullets = game.add.group()
-    bullets.enableBody = true
+   // bullets = game.add.group()
+   // bullets.enableBody = true
 
     game.input.onDown.add(shootBullet)
 
@@ -78,11 +76,14 @@ function update() {
 
 
 function shootBullet() {
+
+    bullets = game.add.group()
     let bullet = bullets.create(dude.x , dude.y, 'bullet')
     game.physics.arcade.enable(bullet)
     bullet.anchor.set(0.5)
     bullet.scale.setTo(2)
     game.physics.arcade.moveToPointer(bullet, 700)
+    bullets.enableBody = true
 }
 
 
@@ -90,13 +91,18 @@ function shootBullet() {
 const collectCoin = function(_bullet, _coin){     
     
     _coin.destroy() 
-    let newCoin = money.create(game.world.randomX, game.world.randomY, "coin")
+    
+coinX = game.world.randomX
+coinY = game.world.randomY
+
+    let newCoin = money.create(coinX, coinY, "coin")
     newCoin.animations.add('spin', [], 10, true).play()
     newCoin.scale.setTo(0.2)
     game.physics.arcade.enable(newCoin)
 
     console.log("You've collected " + ++score + " coins")
-    
+    console.log(coinX, coinY)
+
 }
 
 
