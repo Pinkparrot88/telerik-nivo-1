@@ -14,6 +14,7 @@ function preload() {
     game.load.spritesheet('coin', 'coin.png', 1198/5, 704/2)
 }
 
+
 function create() {
 
     game.world.setBounds(0 ,0, 2048, 1365)

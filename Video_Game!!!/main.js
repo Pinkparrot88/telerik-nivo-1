@@ -24,7 +24,7 @@ let coin
 
 const jump = function(){       //this is where I make the function that helps my character jump
     if (w.isDown)
-        dude.body.velocity.y = -700
+        {dude.body.velocity.y = -700}
 }
 
 
