@@ -102,14 +102,8 @@ const shootBullet = function() {
     bullet.scale.setTo(2)
     bullet.body.velocity.y = -500
 }
-/*
-const kill_enemy = function(_bullet, _enemy) {
-    _enemy.destroy()
-    _bullet.destroy()
-    explode()
-    add_enemy()
- 
-}*/
+
+
 
 function kill_enemy( _enemy, _bullet) {
     _enemy.kill()
@@ -117,6 +111,9 @@ function kill_enemy( _enemy, _bullet) {
     explode()
     add_enemy()
 }
+
+
+
 
 
 function explode(){

@@ -30,7 +30,7 @@ function update() {
 
 
 
-const background= function(){
+const background = function(){
     const background = game.add.sprite(0, 0, 'background')
     background.width=game.width
     background.height=game.height
